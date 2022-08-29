@@ -23,6 +23,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
@@ -60,6 +61,9 @@ nnoremap <C-f> :Ag<Cr>
 nnoremap <Leader>g :Git<Cr>
 nnoremap <Leader>gd :Gdiff<Cr>
 nnoremap <Leader>gw :Gwrite<Cr>
+
+nnoremap <C-t> :NERDTreeToggleVCS<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
 
 " Insert Remaps
 inoremap jj <esc>
